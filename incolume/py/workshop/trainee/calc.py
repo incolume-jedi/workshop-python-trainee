@@ -19,6 +19,6 @@ def calculadora():
 if __name__ == "__main__":
     import doctest
     doctest.testfile(
-        project.joinpath("tests", "calc.txt").as_posix(),
+        project.joinpath("tests", "test_calc.txt").as_posix(),
         module_relative=False
     )
