@@ -28,6 +28,7 @@ from incolume.py.workshop.trainee import __version__
         ("1.1.1-rc.99999", True),
         ("1.1.99999", True),
         ("1.999999.1", True),
+        ("1.0.0-a.0", True),
     ),
 )
 def test_version(entrance, expected):
