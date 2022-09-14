@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pytest
 from incolume.py.workshop.trainee import listage_002
 from math import pi
@@ -46,9 +48,21 @@ def test_exercices(entrance):
         (listage_002.ex08, ('ovo', ), 'True'),
         (listage_002.ex08, ('subi no onibus', ), 'True'),
         (listage_002.ex08, ('casa', ), 'False'),
-        (listage_002.ex09, (), ''),
-        (listage_002.ex10, (), ''),
-        (listage_002.ex11, (), ''),
+        (listage_002.ex09, ('000.000.000-00',), 'Inválido'),
+        (listage_002.ex09, ('000.000.001-91',), 'Válido'),
+        (listage_002.ex10, (10,), 'dez'),
+        (listage_002.ex10, (11,), 'onze'),
+        (listage_002.ex10, (19,), 'dezenove'),
+        (listage_002.ex10, (99,), 'noventa e nove'),
+        (listage_002.ex10, (0,), 'zero'),
+        (listage_002.ex10, (25,), 'vinte e cinco'),
+        (listage_002.ex10, (52,), 'cinquenta e dois'),
+        (listage_002.ex10, (38,), 'trinta e oito'),
+        (listage_002.ex10, (47,), 'quarenta e sete'),
+        (listage_002.ex10, (0,), 'zero'),
+        (listage_002.ex10, (100,), 'Somente números entre 0 e 99.'),
+        (listage_002.ex10, (-1,), 'Somente números entre 0 e 99.'),
+        (listage_002.ex11, (Path(__file__).parent/'insumos'/'palavras.txt',), ''),
         (listage_002.ex12, (), ''),
         (listage_002.ex13, (), ''),
         (listage_002.ex14, (), ''),
