@@ -6,7 +6,7 @@ Using ``calculadora``
 This is an example text file in reStructuredText format (https://docs.python.org/2/library/doctest.html).
   First import ``calculadora`` from the ``calc`` module:
 
-    >>> from calc import calculadora
+    >>> from incolume.py.workshop.trainee.calc import calculadora
 
 Now use it:
     >>> calculadora('+',3, 4)

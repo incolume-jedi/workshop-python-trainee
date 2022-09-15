@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "workshop-python-trainee"
-version = "0.3.0-alpha.0"
+version = "0.3.0-alpha.2"
 description = ""
 authors = ["Britodfbr <britodfbr@gmail.com>"]
 packages=[
