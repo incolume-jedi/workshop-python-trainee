@@ -7,7 +7,7 @@ from math import pi
 
 @pytest.mark.parametrize(
     'entrance',
-    [f'ex{x:02}' for x in range(1, 15)]
+    [f'ex{x:02}' for x in range(1, 13)]
 )
 def test_exercices(entrance):
     assert entrance in dir(listage_002)
@@ -62,10 +62,14 @@ def test_exercices(entrance):
         (listage_002.ex10, (0,), 'zero'),
         (listage_002.ex10, (100,), 'Somente números entre 0 e 99.'),
         (listage_002.ex10, (-1,), 'Somente números entre 0 e 99.'),
-        (listage_002.ex11, (Path(__file__).parent/'insumos'/'palavras.txt',), ''),
-        (listage_002.ex12, (), ''),
-        (listage_002.ex13, (), ''),
-        (listage_002.ex14, (), ''),
+        (listage_002.ex11, ('345-1234',), '3345-1234'),
+        (listage_002.ex11, ('3451234',), '3345-1234'),
+        (listage_002.ex11, ('4610133',), '3461-0133'),
+        (listage_002.ex11, ('461-0133',), '3461-0133'),
+        (listage_002.ex11, ('34610133',), '3461-0133'),
+        (listage_002.ex12, ('leet', ), 'l33t'),
+        (listage_002.ex12, ('casa',), '<@$@'),
+        (listage_002.ex12, ('bola',), 'b0l@'),
     ),
 )
 def test_screen(capsys, entrance, params, expected):
