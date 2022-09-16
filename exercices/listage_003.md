@@ -7,11 +7,13 @@
 2. Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
 
 3. Faça um programa que leia e valide as seguintes informações:
-Nome: maior que 3 caracteres;
-Idade: entre 0 e 150;
-Salário: maior que zero;
-Sexo: 'f' ou 'm';
-Estado Civil: 's', 'c', 'v', 'd';
+    ```
+    Nome: maior que 3 caracteres;
+    Idade: entre 0 e 150;
+    Salário: maior que zero;
+    Sexo: 'f' ou 'm';
+    Estado Civil: 's', 'c', 'v', 'd';
+    ```
 
 4. Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 
@@ -32,12 +34,13 @@ Estado Civil: 's', 'c', 'v', 'd';
 12. Copie e altere o programa anterior para mostrar no final a soma dos números.
 
 13. Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual número ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
-Tabuada de 5:
-5 X 1 = 5
-5 X 2 = 10
-..
-5 X 10 = 50
-
+    ```
+    Tabuada de 5:
+    5 X 1 = 5
+    5 X 2 = 10
+    ..
+    5 X 10 = 50
+    ```
 14. Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
 
 15. Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares.
@@ -75,5 +78,5 @@ Exemplo:
 28. Sendo H= 1 + 1/2 + 1/3 + 1/4 + ... + 1/N, Faça um programa que calcule o valor de H com N termos.
 
 28. Faça um programa que mostre os n termos da Série a seguir:
- S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 + ... + n/m.
+ S = 1/2 + 2/4 + 3/8 + 4/16 + 5/32 + ... + n/m.
  Imprima no final a soma da série.
